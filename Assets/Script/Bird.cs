@@ -5,14 +5,17 @@ public class Bird : MonoBehaviour
     private bool isDead = false;
     // callar rigidbody från gameobject
     private Rigidbody2D rb;
+    // callar animator från gameobject
+    private Animator anim;
 
     // forcen i FLAPPEN
     public float upForce = 200f;
 
     void Start()
     {
-        // i startup hämta rigidbody från objektet
+        // i startup hämta från objektet
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class Bird : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 // adda forcen uppåt
                 rb.AddForce(new Vector2(0, upForce));
+                anim.SetTrigger("Flap");
             }
         }
     }
@@ -36,5 +40,6 @@ public class Bird : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isDead = true;
+        anim.SetTrigger("Die");
     }
 }
