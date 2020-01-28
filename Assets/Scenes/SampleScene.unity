@@ -218,7 +218,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017542243, y: 2.0043442}
+  m_Offset: {x: -0.017542243, y: 1.7490897}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -229,7 +229,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4794912, y: 1.7483029}
+  m_Size: {x: 1.4794912, y: 2.258812}
   m_EdgeRadius: 0
 --- !u!4 &60122568
 Transform:
@@ -303,9 +303,9 @@ GameObject:
   - component: {fileID: 288767503}
   - component: {fileID: 288767502}
   - component: {fileID: 288767501}
-  - component: {fileID: 288767504}
   - component: {fileID: 288767505}
   - component: {fileID: 288767506}
+  - component: {fileID: 288767504}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -372,7 +372,8 @@ SpriteRenderer:
   m_SortingLayerID: 272126643
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 999948790845981865, guid: d5f82c6710610564885b645044faeb1a, type: 3}
+  m_Sprite: {fileID: 8641298014718593653, guid: f525b912eb1b0b7459f98e8efb6a735c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -414,7 +415,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.15, y: 0.7}
+    oldSize: {x: 2.03, y: 0.96}
     newSize: {x: 1.13, y: 0.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -422,21 +423,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.565, y: 0.005}
-      - {x: 0.55946845, y: 0.036382895}
-      - {x: 0.5521307, y: 0.34702253}
-      - {x: 0.005, y: 0.33499998}
-      - {x: -0.285, y: 0.33499998}
-      - {x: -0.345, y: 0.325}
-      - {x: -0.55393696, y: 0.33978838}
-      - {x: -0.565, y: 0.105}
-      - {x: -0.565, y: -0.145}
-      - {x: -0.5708514, y: -0.33978844}
-      - {x: -0.39499998, y: -0.33499998}
-      - {x: 0.21499999, y: -0.33499998}
-      - {x: 0.55563974, y: -0.3487254}
-      - {x: 0.555, y: -0.105}
-      - {x: 0.565, y: -0.044999998}
+    - - {x: 1.015, y: -0.049999997}
+      - {x: 1.015, y: 0.089999996}
+      - {x: 0.98499995, y: 0.22999999}
+      - {x: 0.935, y: 0.34}
+      - {x: 0.79499996, y: 0.42999998}
+      - {x: 0.60499996, y: 0.48}
+      - {x: 0.475, y: 0.48}
+      - {x: 0.33499998, y: 0.45999998}
+      - {x: 0.185, y: 0.44}
+      - {x: 0.055, y: 0.32}
+      - {x: -0.035, y: 0.35999998}
+      - {x: -0.405, y: 0.38}
+      - {x: -0.745, y: 0.37}
+      - {x: -0.865, y: 0.34}
+      - {x: -0.98499995, y: 0.24}
+      - {x: -1.015, y: 0.16}
+      - {x: -1.015, y: -0.03}
+      - {x: -0.97499996, y: -0.12}
+      - {x: -0.905, y: -0.19999999}
+      - {x: -0.73499995, y: -0.29}
+      - {x: -0.505, y: -0.32}
+      - {x: -0.24499999, y: -0.32}
+      - {x: -0.155, y: -0.42999998}
+      - {x: 0.074999996, y: -0.48}
+      - {x: 0.325, y: -0.48}
+      - {x: 0.48499998, y: -0.45}
+      - {x: 0.805, y: -0.34}
+      - {x: 0.97499996, y: -0.19999999}
+      - {x: 0.995, y: -0.14}
 --- !u!114 &288767505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,7 +893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938735707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 60122568}
