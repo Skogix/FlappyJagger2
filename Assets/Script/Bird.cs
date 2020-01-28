@@ -31,4 +31,10 @@ public class Bird : MonoBehaviour
             }
         }
     }
+
+    // om collision med någon rigidbody
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isDead = true;
+    }
 }
