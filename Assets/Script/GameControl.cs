@@ -7,6 +7,7 @@ public class GameControl : MonoBehaviour
     public static GameControl instance;
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float scrollSpeed = -1.5f;
 
     // awake är ännu tidigare än start så dubbelkolla så inga andra instanser är igång
     private void Awake()
