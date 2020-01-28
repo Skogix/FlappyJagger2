@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class GameControl : MonoBehaviour
     public GameObject gameOverText;
     public bool gameOver = false;
     public float scrollSpeed = -1.5f;
+    public Text scoreText;
+
+    private int score = 0;
 
     // awake är ännu tidigare än start så dubbelkolla så inga andra instanser är igång
     private void Awake()
@@ -36,6 +40,15 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    public void BirdScored()
+    {
+        if (gameOver)
+        {
+            return;
+        }
+        score++;
+        scoreText.text = "Poäng: " + score.ToString();
+    }
     public void BirdDied()
     {
         gameOverText.SetActive(true);
